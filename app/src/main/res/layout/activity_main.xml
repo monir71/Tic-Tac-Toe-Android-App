@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:background="#3D70B4"
+        android:textColor="#FF5722"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="North Hunter IT Dilalpur"
+        android:background="#8A5353"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="3sp"
+        android:paddingStart="20sp"
+        android:paddingEnd="20sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        android:backgroundTint="#00ff00"
+        android:onClick="Reset"/>
+
+    <GridLayout
+        android:id="@+id/mainGridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:background="@color/black"
+        android:layout_margin="5sp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            app:cornerRadius="0sp"
+            android:backgroundTint="@color/btnColor"
+            android:textColor="@color/white"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:onClick="Check" />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            app:cornerRadius="0sp"
+            android:backgroundTint="@color/btnColor"
+            android:textColor="@color/white"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:onClick="Check"/>
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            app:cornerRadius="0sp"
+            android:backgroundTint="@color/btnColor"
+            android:textColor="@color/white"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:onClick="Check"/>
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            app:cornerRadius="0sp"
+            android:backgroundTint="@color/btnColor"
+            android:textColor="@color/white"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:onClick="Check"/>
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            app:cornerRadius="0sp"
+            android:backgroundTint="@color/btnColor"
+            android:textColor="@color/white"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:onClick="Check"/>
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            app:cornerRadius="0sp"
+            android:backgroundTint="@color/btnColor"
+            android:textColor="@color/white"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:onClick="Check"/>
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            app:cornerRadius="0sp"
+            android:backgroundTint="@color/btnColor"
+            android:textColor="@color/white"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:onClick="Check"/>
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            app:cornerRadius="0sp"
+            android:backgroundTint="@color/btnColor"
+            android:textColor="@color/white"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:onClick="Check"/>
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            app:cornerRadius="0sp"
+            android:backgroundTint="@color/btnColor"
+            android:textColor="@color/white"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:onClick="Check"/>
+    </GridLayout>
+
+    <ImageButton
+        android:id="@+id/img_btn_win"
+        android:layout_width="wrap_content"
+        android:layout_height="200sp"
+        android:src="@drawable/winbanner"
+        android:contentDescription="Win Banner"
+        android:scaleType="centerInside"
+        android:backgroundTint="#FFF"/>
+
+</LinearLayout>
